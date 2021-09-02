@@ -1,0 +1,23 @@
+@import './mixins.scss';
+@import './variables.scss';
+
+.logo-text {
+	font-size: 24px;
+	color: $dark-gray;
+}
+.register-title {
+	color: $dark-gray;
+}
+.register-text {
+	color: $dark-gray;
+}
+.register {
+	@include button(200px, 40px, $red);
+	&:hover {
+		background-color: $dark-red;
+		transition: 0.3s;
+	}
+}
+.show-password {
+	@include resetButton;
+}

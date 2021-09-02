@@ -1,0 +1,42 @@
+@import './variables.scss';
+@import './mixins.scss';
+.link:hover {
+	border-bottom: 1px solid $red;
+}
+.introduction {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	min-height: 80vh;
+	&-text {
+		width: 48%;
+		color: $dark-gray;
+		text-align: center;
+	}
+}
+.title {
+	color: $dark-gray;
+	text-align: center;
+}
+.subtitle {
+	color: $light-gray;
+	font-size: 18px;
+	text-align: center;
+}
+.start {
+	@include button(120px, 40px, $red);
+	transition: 0.3s;
+	&:hover {
+		background-color: $dark-red;
+	}
+}
+.description {
+	&-title {
+		color: $dark-gray;
+	}
+	&-text {
+		font-size: 18px;
+		color: $light-gray;
+	}
+}

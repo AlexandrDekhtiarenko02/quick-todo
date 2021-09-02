@@ -1,0 +1,15 @@
+@mixin button($width, $heigth, $color) {
+	width: $width;
+	height: $heigth;
+	border-radius: 20px;
+	background-color: $color;
+	color: $white;
+	border: none;
+	-webkit-box-shadow: 1px 6px 8px 0px rgba(34, 60, 80, 0.2);
+	-moz-box-shadow: 1px 6px 8px 0px rgba(34, 60, 80, 0.2);
+	box-shadow: 1px 6px 8px 0px rgba(34, 60, 80, 0.2);   
+}
+@mixin resetButton {
+    background-color: transparent;
+    border: none;
+}
